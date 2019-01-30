@@ -1,6 +1,6 @@
 FROM debian:9
 
-RUN apt-get clean && apt-get update && apt-get install -y inotify-tools ca-certificates locales imagemagick
+RUN apt-get clean && apt-get update && apt-get install -y ca-certificates locales
 
 RUN locale-gen "en_US.UTF-8"
 ENV LANGUAGE="en_US.UTF-8"
